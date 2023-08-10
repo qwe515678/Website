@@ -74,22 +74,15 @@ const profile = {
           initialValue: "https://github.com/",
         },
         {
-          name: "linkedin",
-          title: "Linkedin URL",
-          type: "url",
-          initialValue: "https://linkedin.com/in/",
+          name: "email",
+          title: "Email Address",
+          type: "string",
         },
         {
-          name: "twitter",
-          title: "Twitter URL",
+          name: "telegram",
+          title: "telegram URL",
           type: "url",
-          initialValue: "https://twitter.com/",
-        },
-        {
-          name: "twitch",
-          title: "Twitch URL",
-          type: "url",
-          initialValue: "https://twitch.com/",
+          initialValue: "https://t.me/",
         },
       ],
       options: {
