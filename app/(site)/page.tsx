@@ -1,6 +1,6 @@
 import { getProfile } from "../../sanity/sanity.query";
 import { ProfileType } from "../../types";
-import HeroSvg from "./icons/herosvg";
+import HeroSvg from "./components/herosvg";
 import React from 'react'
 
 export default async function Home() {
