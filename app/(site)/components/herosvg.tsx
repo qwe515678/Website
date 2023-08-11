@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HeroSvg() {
   return (
-    <svg width="820" height="908" viewBox="0 0 820 908" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className='sm:w-[60%] lg:w-[50%]'  viewBox="0 0 820 908" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g>
       
         <line x1="272.926" y1="403" x2="455.926" y2="403" stroke="#FF004D" strokeWidth="38"/>

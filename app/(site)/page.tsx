@@ -3,11 +3,13 @@ import { ProfileType } from "../../types";
 import HeroSvg from "./components/herosvg";
 import React from 'react'
 
+
 export default async function Home() {
+
   const profile: ProfileType[] = await getProfile();  
   return (
     <main className="max-w-7xl mx-auto lg:px-16 px-6">
-      <section className="flex xl:flex-row flex-col xl:items-center items-start xl:justify-center justify-between gap-x-12 lg:mt-32 mt-20 mb-16">
+      <section className="flex xl:flex-row gap-2 xl:items-center items-center flex-col-reverse xl:justify-center justify-between gap-x-12 m-0 mb-16 xl:h-[40vh] lg:md:h-[60vh]  h-[80vh]">
         {profile &&
           profile.map((data) => (
             <div key={data._id} className="lg:max-w-2xl max-w-2xl">
@@ -34,8 +36,7 @@ export default async function Home() {
               </ul>
             </div>
           ))}
-
-        <HeroSvg />
+          <HeroSvg />
       </section>
     </main>
   );

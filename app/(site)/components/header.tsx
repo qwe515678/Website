@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../icons/logo.svg";
 
+
 export default function Header() {
   return (
     <header className="py-6 md:px-16 px-6 border-b border-zinc-800 z-30 md:mb-28 mb-20">
@@ -24,6 +25,13 @@ export default function Header() {
                 href="/projects"
                 className="hover:text-purple-400 duration-300">
                 Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                href='/'
+                className='hover:text-purple-400 duration-300'>
+                Home
               </Link>
             </li>
           </ul>
