@@ -4,6 +4,7 @@ import { getProfile } from '../../../sanity/sanity.query';
 import type { ProfileType } from '../../../types';
 import { PortableText } from "@portabletext/react";
 import { BiEnvelope, BiFile } from "react-icons/bi";
+import Cube from '../components/cube';
 
 export default async function About() {
     const profile: ProfileType[] = await getProfile();
@@ -26,15 +27,15 @@ export default async function About() {
 
               <div className="flex flex-col lg:justify-self-center justify-self-start gap-y-8 lg:order-1 order-none mb-12">
                 <div>
-                  <Image
+                  {/* <Image
                     className="rounded-2xl mb-4 object-cover max-h-96 min-h-96 bg-top bg-[#1d1d20]"
                     src={data.profileImage.image}
                     width={400}
                     height={400}
                     quality={100}
                     alt={data.profileImage.alt}
-                  />
-
+                  /> */}
+                  <Cube />
                   <a
                     href={`${data.resumeURL}?dl=${data.fullName}_resume`}
                     className="flex items-center justify-center gap-x-2 bg-[#1d1d20] border border-transparent hover:border-zinc-700 rounded-md duration-200 py-2 text-center cursor-cell font-medium"

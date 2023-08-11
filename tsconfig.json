@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/(site)/components/cube.jsx"  ],
   "exclude": [
     "node_modules"
   ]

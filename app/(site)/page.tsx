@@ -3,9 +3,7 @@ import { ProfileType } from "../../types";
 import HeroSvg from "./components/herosvg";
 import React from 'react'
 
-
 export default async function Home() {
-
   const profile: ProfileType[] = await getProfile();  
   return (
     <main className="max-w-7xl mx-auto lg:px-16 px-6">
